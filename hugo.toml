@@ -1,0 +1,29 @@
+baseURL = 'https://gingerceo.com/'
+languageCode = 'en-us'
+title = 'GingerBlog'
+theme = "PaperMod"
+
+[params]                                                                                                                                                                                                            
+  description = "My thoughts and ideas"                                                                                                                                                                             
+  author = "Michał Mnich"                                                                                                                                                                                              
+                                                                                                                                                                                                                 
+  # Enable search                                                                                                                                                                                                   
+  [params.homeInfoParams]                                                                                                                                                                                           
+    Title = "Welcome to my blog"                                                                                                                                                                                    
+    Content = "This is where I share my thoughts on technology, life, and more."                                                                                                                                    
+                                                                                                                                                                                                                 
+[menu]                                                                                                                                                                                                              
+  [[menu.main]]                                                                                                                                                                                                     
+    identifier = "posts"                                                                                                                                                                                            
+    name = "Posts"                                                                                                                                                                                                  
+    url = "/posts/"                                                                                                                                                                                                 
+    weight = 10                                                                                                                                                                                                     
+  [[menu.main]]                                                                                                                                                                                                     
+    identifier = "about"                                                                                                                                                                                            
+    name = "About"                                                                                                                                                                                                  
+    url = "/about/"                                                                                                                                                                                                 
+    weight = 20
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
